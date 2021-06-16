@@ -1,5 +1,4 @@
-How to use MLP functionality
-____________________________
+# How to use MLP functionality
 
 1. Train a MLP in a tool which is supported
     a. orange3
@@ -16,10 +15,10 @@ ____________________________
 6. Use the FB in your Project
 
 
----------------------
-|Example JSON export|
----------------------
 
+# Example JSON export
+
+```python
 from Scripts import MLP2PLC
 
 MLP = MLP2PLC.MLPloader()
@@ -30,3 +29,4 @@ MLP.loadOrangeModel("location/of/your/model", "yourModel.pkcls")
 MLP.loadSKLearnModel(yourSKLearnModelObj, "optionalModelName")
 
 MLP.exportToJson()
+```
